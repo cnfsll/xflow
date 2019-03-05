@@ -14,7 +14,7 @@ shift
 arg="$@"
 
 # start the scheduler
-export DMLC_PS_ROOT_URI='127.0.0.1'
+export DMLC_PS_ROOT_URI='10.153.179.172'
 export DMLC_PS_ROOT_PORT=8000
 export DMLC_ROLE='scheduler'
 ${bin} ${arg} &
@@ -35,3 +35,4 @@ for ((i=0; i<${DMLC_NUM_WORKER}; ++i)); do
 done
 
 wait
+
